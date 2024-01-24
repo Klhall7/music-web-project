@@ -1,0 +1,76 @@
+
+BRAINSTORM Who is your target audience? - Music Listeners, people who want to listen off and online, offline would be downloads 
+
+
+	Who are you building this app for? people who want a cheaper or simpler  alternative to Spotify/Amazon Music etc.
+
+	What are their specific needs and pain points? Easy interface, mobile access, offline access, playlist creation, recommendations, share feature
+
+
+What makes this app standout from existing solutions?
+
+	Why should users choose your app over another? Easy offline access without active subscription. 
+						       Cheaper? Can listen without an account but have to subscribe for custom playlists
+
+
+How will users navigate and interact with the app?  
+
+	How will you make sure the interface is intuitive? - Similar interface to existing apps. Same controls for Apple and Android 
+
+	How will you ensure accessibility for diverse users? Deaf- maybe vibrations and subtitles for experience?
+							     Blind - read aloud options, speak to navigate 
+							     Cultural and regional recommendations, by genre
+							     ADVANCED- audiobook option and lyrics display option, external account routing or music import music or settings
+
+What are the essential features and functionality?
+
+	What features should be prioritized initially and what features can come later? Local storage outside of the cloud, option for a cloud
+
+	Here’s the list of must-have features for a music streaming app:
+
+	Login & Registration
+	User Profile
+	Search
+	Music Player
+	User’s Library
+	Artist & Album Profiles
+
+	What features are critical?
+
+	music licensing 
+	formatted for apple & android
+	set to height device and width 
+	browser & mobile access
+	help info/tutorial when app is first used
+	clean user interface
+	manageable download size to prevent overload of storage
+
+
+INFO ARCHITECTURE What is your information hierarchy? - what will user see first(homepage)
+
+	What are the most important items to convey to the user? What the app does
+								 What they need to do to get started - quick process 
+								 have the info play in a quick visual so they have to search or think about it to much
+						                 Relate to interface they already know (Spotify?)
+								 Price point - if any
+								 Customer service/ question box if needed
+
+	How do you remove "friction" (i.e. make it easy for the user to use and/or register to use the app)
+								 Sign in with an existing account (google) or email
+								 bio recognition or passcode to login
+								 compatible download (apple android, pixel, razor) 
+								 Familiar interface
+
+	What content is the most important, and how do you make sure it's easy to get to? Profile
+											  Search Feature - by album, genre, artist
+											  Feature placement should visible and convienient, not interfere with typing/ exit
+											  home button in case they get lost? 
+
+	How do you model the site navigation to match this hierarchy?  Profile/dropdown menu should be on top right
+								       tabs should break down by relevance (albums, playlists, artists) 
+								       navbar to profile, home, and support
+								       Custom playlist label
+
+	What's the ideal user "path" to use the app?  Give feedback option, report errors
+						      Dislike/like feature for recommendations - adapt ui to profile feedback 
+						      tracking within app data to examine active user behavior to understand what you’re doing right. (Userpilot, Google Analytics?)
