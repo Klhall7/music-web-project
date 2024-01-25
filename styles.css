@@ -4,7 +4,10 @@ html {
   font-size: 16px;
   font-style: normal;
   box-sizing: border-box;
-  margin: 1rem
+}
+header {
+  display: none;
+  position:fixed;
 }
 body {
   background: linear-gradient(110deg, rgb(7 71 15 / 94%), rgba(255,0,0,0) 70.71%), 
@@ -13,16 +16,21 @@ body {
 }
 
 .nav {
-  inline-size: min-content;
+  width: 100%;
   overflow:hidden;
   position:fixed;
   top: 10px;
-  /* text-align: center; */
-  /* justify-content: center; */
+  left: 0px;
+}
+
+.nav img {
+  place-self: center start;
+  height: 60px;
+  width: 70px;
 }
 
 .nav li {
-  margin: 1rem;
+  margin: 0.8rem;
   color: red;
   list-style:none;
 }
@@ -33,9 +41,21 @@ body {
 
 .main-nav {
   box-sizing: inherit;
-  display: flex;
   width: auto;
   margin: 0;
   list-style:none;
-  background-color:black; 
+  background-color: rgb(10 57 16 / 94%);
+  opacity: .8;
 }
+.main.row.justify-center {
+  width: auto;
+  border: solid 1px;
+  padding-top: 100px;
+}
+
+p {
+  width: 320px;
+  height: 50px;
+  border-color: black ; 
+}
+
