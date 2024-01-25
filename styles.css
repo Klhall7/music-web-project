@@ -1,3 +1,41 @@
-h1 {
-    color:rgba(66, 43, 43, 0.699);
-  }
+html {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 1rem
+}
+body {
+  background: linear-gradient(110deg, rgb(7 71 15 / 94%), rgba(255,0,0,0) 70.71%), 
+  linear-gradient(317deg, rgb(235 158 22 / 96%), rgba(0,255,0,0) 70.71%),
+  linear-gradient(293deg, rgb(151 96 5 / 94%), rgba(0,0,255,0) 70.71%);
+}
+
+.nav {
+  inline-size: min-content;
+  overflow:hidden;
+  position:fixed;
+  top: 10px;
+  /* text-align: center; */
+  /* justify-content: center; */
+}
+
+.nav li {
+  margin: 1rem;
+  color: red;
+  list-style:none;
+}
+
+.nav a {
+  color: goldenrod;
+}
+
+.main-nav {
+  box-sizing: inherit;
+  display: flex;
+  width: auto;
+  margin: 0;
+  list-style:none;
+  background-color:black; 
+}
