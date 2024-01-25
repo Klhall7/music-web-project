@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="./contact-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+    <title>Create Account Music App </title>
+</head>
+<body>
+    <main>
+        <div class="contact-box">
+            <p>Do you have any questions, suggestions, or feedback? we'd love to hear from you!</p>
+                <form id ="fullName">
+                <label>
+                        <input type="text" placeholder="First & Last">
+                </label>
+                </form>
+                <p id ="nameResponse"></p> <!-- show input response-->
+                        <script> 
+                            console.log('Page Loaded');
+                            const fullNameForm = document.querySelector('#fullName');
+                            const nResponseParagraph = document.querySelector('#nameResponse');
+                            fullNameForm.addEventListener('submit',function(event){
+                            event.preventDefault();
+                            const theForm =event.target;
+                            console.log(theForm)
+                            const myInput = theForm.querySelector('input');
+                            console.log(myInput.value)
+                            nResponseParagraph.innerHTML = myInput.value
+                            })
+                        </script>
+
+                <form id ="emailAdd">
+                <label>
+                        <input type="text" placeholder="example.a@gmail.com">
+                </label>
+                </form> 
+                <p id ="emailResponse"></p> <!-- show input response-->
+                        <script> 
+                            console.log('Page Loaded');
+                            const emailAddForm = document.querySelector('#emailAdd');
+                            const eResponseParagraph = document.querySelector('#emailResponse');
+                            emailAddForm.addEventListener('submit',function(event){
+                            event.preventDefault();
+                            const theForm =event.target;
+                            console.log(theForm)
+                            const myInput = theForm.querySelector('input');
+                            console.log(myInput.value)
+                            eResponseParagraph.innerHTML = myInput.value
+                            })
+                        </script>
+
+                <form id ="yourMsg">
+                <label>
+                        <input type="text" placeholder="Your message">
+                </label>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id ="yourMsgResponse"></p> <!-- show input response-->
+                    <script> 
+                        console.log('Page Loaded');
+                        const yourMsgForm = document.querySelector('#yourMsg');
+                        const yResponseParagraph = document.querySelector('#yourMsgResponse');
+                        yourMsgForm.addEventListener('submit',function(event){
+                        event.preventDefault();
+                        const theForm =event.target;
+                        console.log(theForm)
+                        const myInput = theForm.querySelector('input');
+                        console.log(myInput.value)
+                        yResponseParagraph.innerHTML = myInput.value
+                        })
+                    </script>
+
+                        <div>
+                            <p>Your feedback is appreciated. Any questions will be answered as soon as possible</p>
+                        </div>
+        </div>
+    </main>
+
+</body>
+</html>

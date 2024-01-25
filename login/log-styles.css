@@ -1,0 +1,13 @@
+html {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 400px; 
+    height: auto; 
+    border: 1px solid black
+}
