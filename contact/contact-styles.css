@@ -9,5 +9,6 @@ html {
 .contact-box {
     width: 600px; 
     height: auto; 
-    border: 1px solid black
+    border: 1px solid black;
+    border-radius: 25px
 }
