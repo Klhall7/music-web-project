@@ -4,59 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/grid.css">
-    <link rel="stylesheet" href="./log-styles.css">
+    <link rel="stylesheet" type="text/css" href="/login/log-styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
     <title>Login Music App </title>
 </head>
 <body>
-    <div class="login-box">
-        <h1>Welcome Back</h1>
-        <form id ="emailAdd">
-            <label> Email Address
-                    <input type="text" placeholder="example.a@gmail.com">
-            </label>
-            </form>
-                    <p id ="emailResponse"></p> <!-- show input response-->
+    <section class="login-box">
+        <div class="title-box">
+            <h1>Welcome Back</h1>
+            <style>img {width: 50px;height:auto;}</style>
+            <a href="/music-app.html"><img src="/images/sound-logo.png"></a>
+        </div>
+            <div class="form d-flex">
+            <form id ="emailAdd">
+                <label> Email Address:
+                        <input type="text" placeholder="example.a@gmail.com">
+                </label>
+                </form>
+                        <p id ="emailResponse"></p> <!-- show input response-->
+                        <script> 
+                            console.log('Page Loaded');
+                            const emailAddForm = document.querySelector('#emailAdd');
+                            const eResponseParagraph = document.querySelector('#emailResponse');
+                            emailAddForm.addEventListener('submit',function(event){
+                            event.preventDefault();
+                            const theForm =event.target;
+                            console.log(theForm)
+                            const myInput = theForm.querySelector('input');
+                            console.log(myInput.value)
+                            eResponseParagraph.innerHTML = myInput.value
+                            })
+                        </script>
+
+                <form id ="pass">
+                <label>Password:
+                        <input type="text" placeholder="must be 8 characters">
+                </label>
+                    <button type="submit">Login</button>
+                </form>
+                    <p id ="passResponse"></p> <!-- show input response-->
                     <script> 
-                        console.log('Page Loaded');
-                        const emailAddForm = document.querySelector('#emailAdd');
-                        const eResponseParagraph = document.querySelector('#emailResponse');
-                        emailAddForm.addEventListener('submit',function(event){
+                        console.log('Login Loaded');
+                        const passForm = document.querySelector('#pass');
+                        const pResponseParagraph = document.querySelector('#passResponse');
+                        passForm.addEventListener('submit',function(event){
                         event.preventDefault();
                         const theForm =event.target;
                         console.log(theForm)
                         const myInput = theForm.querySelector('input');
                         console.log(myInput.value)
-                        eResponseParagraph.innerHTML = myInput.value
+                        pResponseParagraph.innerHTML = myInput.value
                         })
                     </script>
 
-            <form id ="pass">
-            <label>Password
-                    <input type="text" placeholder="must be 8 characters">
-            </label>
-                <button type="submit">Login</button>
-            </form>
-                <p id ="passResponse"></p> <!-- show input response-->
-                <script> 
-                    console.log('Page Loaded');
-                    const passForm = document.querySelector('#pass');
-                    const pResponseParagraph = document.querySelector('#passResponse');
-                    passForm.addEventListener('submit',function(event){
-                    event.preventDefault();
-                    const theForm =event.target;
-                    console.log(theForm)
-                    const myInput = theForm.querySelector('input');
-                    console.log(myInput.value)
-                    pResponseParagraph.innerHTML = myInput.value
-                    })
-                </script>
+                        <div class="options">
+                            <p> ------ or ------</p>
+                            <button>Google</button>
+                            <button>Apple</button>
+                        </div>
+            </div>          
+        </section>
 
-                    <div>
-                        <p> ------ or ------</p>
-                        <button>Google</button>
-                        <button>Apple</button>
-                    </div>
-    </div>    
+    <section class="library-box">
+        <h2>Song Library</h2>
+        <p>print a list of your current song library</p>
+    
+        <button type="button" id="printLib">show active library</button>
+        <div id="releasesContainer"></div>
+
+    
+    </section>
+
+<section class="next-box">
+    <h1>Up Next</h1>
+    <p>add songs to your play queue from your library*</p>
+    <form id="userList" class="nextForm">
+        <label>Song: 
+            <input type="text" class="input" id="inputS" placeholder="type song name" value=""/>
+        </label>
+        <label>Artist: 
+        <input type="text" class="input" id="inputA" placeholder="type artist name" value=""/>
+        </label>
+        <button type="button" id="generateList">add to play queue</button>
+    </form>
+</section>
+
+    <section id="xray" class="xray-box">
+        <h2>Artist X-Ray</h2>
+        <p>learn more about an artist from Discogs Library</p>
+
+        <button type="button" id="artistsData" class="artists-button">show available artists</button>
+        <div id="artistsContainer"></div>
+
+        <!-- <button type="button" id="showKeys" class="keys-button">show search options</button>
+        <div id="keysContainer"></div> -->
+
+        <form id="xraySearch" class ="xrayForm">
+            <label>
+                <input type="text" id="searchInput" class="search" placeholder="Enter something you want to know about the artist"/>
+            </label>
+            <button type="button" id="startSearch" class="search-button">search</button>
+        </form>
+            <div id="searchResult"></div>
+    </section>
+
+<script src="/login/js/index.js"></script>
 </body>
+
 </html>

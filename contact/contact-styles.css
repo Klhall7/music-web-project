@@ -6,9 +6,57 @@ html {
     box-sizing: border-box;
 }
 
-.contact-box {
-    width: 600px; 
-    height: auto; 
-    border: 1px solid black;
-    border-radius: 25px
+body {
+    background:linear-gradient(271deg,rgba(248, 185, 66, 0.766),rgba(0, 0, 0, 0.94) 70.71%);
 }
+
+.contact-box {
+    margin: 100px 50px 100px 50px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.584);
+}
+.text {
+    padding:20px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 350px;
+    align-items: center;
+}
+
+.form {
+    border-radius: 25px;
+    min-width: 200px;
+    background:linear-gradient(271deg,rgba(236, 114, 20, 0.766),rgba(207, 146, 2, 0.94) 70.71%);
+    color:white;
+    padding: 15px;
+}
+
+.form label {
+    display: block;
+}
+
+.fullName {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+}
+.emailAdd {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+}
+.yourMsg {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+}
+.msg {
+    min-width: 300px;
+    min-height: 100px;
+}
+

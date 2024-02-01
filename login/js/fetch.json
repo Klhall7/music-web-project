@@ -1,0 +1,119 @@
+{
+    "name": "Marty Friedman",
+    "id": 277594,
+    "resource_url": "https://api.discogs.com/artists/277594",
+    "uri": "https://www.discogs.com/artist/277594-Marty-Friedman",
+    "releases_url": "https://api.discogs.com/artists/277594/releases",
+    "images": [
+        {
+            "type": "primary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 450,
+            "height": 675
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 684
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 500,
+            "height": 500
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 450,
+            "height": 632
+        }
+    ],
+    "realname": "Martin Adam Friedman",
+    "profile": "Rock guitarist from Washington D.C. Now living in Tokyo.",
+    "urls": [
+        "https://www.martyfriedman.com",
+        "https://www.facebook.com/martyfriedman.official",
+        "https://twitter.com/marty_friedman",
+        "https://www.instagram.com/martyfriedman",
+        "https://en.wikipedia.org/wiki/Marty_Friedman"
+    ],
+    "namevariations": [
+        "Friedman",
+        "Friedman Marty",
+        "M Friedman",
+        "M. Friedman",
+        "M. Friedmann",
+        "Martin Friedman",
+        "Martin Friedman,",
+        "Marty",
+        "Marty A Friedman",
+        "マーティ・フリードマン"
+    ],
+    "groups": [
+        {
+            "id": 11770,
+            "name": "Megadeth",
+            "resource_url": "https://api.discogs.com/artists/11770",
+            "active": false
+        },
+        {
+            "id": 329942,
+            "name": "Hawaii (3)",
+            "resource_url": "https://api.discogs.com/artists/329942",
+            "active": true
+        },
+        {
+            "id": 371367,
+            "name": "Cacophony",
+            "resource_url": "https://api.discogs.com/artists/371367",
+            "active": true
+        },
+        {
+            "id": 1333687,
+            "name": "Vixen (4)",
+            "resource_url": "https://api.discogs.com/artists/1333687",
+            "active": true
+        },
+        {
+            "id": 1493582,
+            "name": "Aloha (4)",
+            "resource_url": "https://api.discogs.com/artists/1493582",
+            "active": true
+        },
+        {
+            "id": 3272354,
+            "name": "Deuce (31)",
+            "resource_url": "https://api.discogs.com/artists/3272354",
+            "active": false
+        },
+        {
+            "id": 3775924,
+            "name": "Metal Clone X",
+            "resource_url": "https://api.discogs.com/artists/3775924",
+            "active": true
+        },
+        {
+            "id": 5753053,
+            "name": "Rock Fujiyama Band",
+            "resource_url": "https://api.discogs.com/artists/5753053",
+            "active": true
+        },
+        {
+            "id": 6157172,
+            "name": "Lovefixer",
+            "resource_url": "https://api.discogs.com/artists/6157172",
+            "active": true
+        }
+    ],
+    "data_quality": "Needs Vote"
+}

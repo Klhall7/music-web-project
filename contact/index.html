@@ -13,14 +13,18 @@
             <header></header>
             <main class="container">
                 <div class="row">
-                    <div class="column">
-                                <div class="contact-box">
-                                    <span> 
+                    <div class="column d-flex justify-content-center and align-items-center">
+                                <div class="contact-box d-flex"> 
+                                    <div class ="text">
+                                        <style>img {width: 100px;height:auto;}</style>
                                         <a href="/music-app.html"><img src="/images/sound-logo.png"></a>
-                                        <a href="/music-app.html"> < Back to Home</a>
-                                    </span>
-                                    <p>Do you have any questions, suggestions, or feedback? we'd love to hear from you!</p>
-                                        <form id ="fullName">
+                                        <p>Do you have any questions, suggestions, or feedback?</p>
+                                        <p>We'd love to hear from you!</p>
+                                        <p>Your feedback will be considered for updates. Any questions will be answered as soon as possible</p>
+                                    </div>
+                                    
+                                    <div class="form">
+                                        <form id ="fullName">Name:
                                         <label>
                                                 <input type="text" placeholder="First & Last">
                                         </label>
@@ -40,7 +44,7 @@
                                                     })
                                                 </script>
 
-                                        <form id ="emailAdd">
+                                        <form id ="emailAdd">Email:
                                         <label>
                                                 <input type="text" placeholder="example.a@gmail.com">
                                         </label>
@@ -60,11 +64,10 @@
                                                     })
                                                 </script>
 
-                                        <form id ="yourMsg">
+                                        <form id ="yourMsg">Your Message:
                                         <label>
-                                                <input type="text" placeholder="Your message">
+                                                <input type="text" class="msg" placeholder="Your message">
                                         </label>
-                                            <button type="submit">Submit</button>
                                         </form>
                                         <p id ="yourMsgResponse"></p> <!-- show input response-->
                                             <script> 
@@ -80,15 +83,13 @@
                                                 yResponseParagraph.innerHTML = myInput.value
                                                 })
                                             </script>
-
-                                                <div>
-                                                    <p>Your feedback is appreciated. Any questions will be answered as soon as possible</p>
-                                                </div>
+                                                <button type="submit">Submit</button>
+                                    </div>
+                                                
                                 </div>
                     </div>
                 </div>                 
             </main>
-
     </div>
 </body>
 <footer></footer>

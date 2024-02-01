@@ -6,8 +6,143 @@ html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background:linear-gradient(271deg,rgba(248, 185, 66, 0.766),rgba(0, 0, 0, 0.94) 70.71%);
+
+}
+
+.title-box {
+    margin: 20px;
+}
 .login-box {
-    width: 400px; 
-    height: auto; 
-    border: 1px solid black
+    max-width: 600px;
+    text-align: center;
+    height: fit-content; 
+    border-radius: 25px;
+    margin: 100px 400px 100px 400px;
+    padding: 15px;
+    background-color: rgba(202, 198, 194, 0.47);
+}
+
+.form {
+    flex-direction: column;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.next-box {
+    text-align: center;
+    height: fit-content;
+    min-width: fit-content; 
+    max-width: 400px;
+    border-radius: 25px;
+    margin: 100px 450px 100px 450px;
+    padding: 15px;
+    background-color: rgba(202, 198, 194, 0.47);
+}
+
+.nextForm {
+    border: solid 1px silver;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.nextForm input {
+    border: solid 1px silver;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 4px;
+    width: 100%;
+}
+
+.nextForm label {
+    color:silver;
+    font-weight: 500;
+    display: flex;
+    margin: 4px;
+    max-width: 450px;
+    width: 80%;
+}
+
+.nextForm button { 
+    height: fit-content;
+    width: fit-content;
+    margin: 5px 150px 5px 150px;
+    border-radius: 25px;
+    border-color: orangered;
+}
+
+.new-list {
+    display:block;
+    color:silver;
+    text-transform: capitalize;
+    text-align: left;  
+    list-style-type: decimal;
+}
+
+.xray-box {
+    text-align: center;
+    height: fit-content;
+    min-width: fit-content; 
+    max-width: 600px;
+    border-radius: 25px;
+    margin: 100px 450px 100px 450px;
+    padding: 15px;
+    background-color: rgba(202, 198, 194, 0.47);   
+}
+
+.xrayForm input {
+    min-width: 350px;
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-button { 
+    width: fit-content;
+    margin: 5px 200px 5px 200px;
+    border-radius: 25px;
+    border-color: orangered;
+}
+
+.artists-button {
+    width: fit-content;
+    border-radius: 25px;
+    border-color: orangered;
+    margin-bottom: 10px;
+}
+
+/* .keys-button {
+    width: fit-content;
+    border-radius: 25px;
+    border-color: orangered;
+    margin-bottom: 10px;
+} */
+
+.library-box {
+    text-align: center;
+    height: fit-content;
+    min-width: fit-content; 
+    max-width: 600px;
+    border-radius: 25px;
+    margin: 100px 450px 100px 450px;
+    padding: 15px;
+    background-color: rgba(202, 198, 194, 0.47); 
+}
+
+.library-box button {
+    width: fit-content;
+    border-radius: 25px;
+    border-color: orangered;
+    margin-bottom: 10px;
 }
