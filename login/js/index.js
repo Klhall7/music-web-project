@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Queue Ready');
+    console.log('Login Page Ready');
 
     const userList= document.querySelector('#userList');
     const generateList = document.querySelector('#generateList')
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (listItem.innerText.trim() !== '') {
             listElement.appendChild(listItem); // add li to ol
             userList.appendChild(listElement); // Append the generated list to the container
-            userList.classList.add('new-list'); //add class to userList
+            userList.classList.add('new-list'); //add class to userList -does not affect any existing class
         }     
         // Clear the value of the input fields
         inputS.value = "";

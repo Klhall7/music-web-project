@@ -15,8 +15,11 @@ body {
     padding: 15px;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.584);
+    min-width: fit-content;
+    min-height: fit-content;
 }
 .text {
+    min-width: 45%;
     padding:20px;
     text-align: center;
     display: inline-flex;
@@ -25,38 +28,88 @@ body {
     align-items: center;
 }
 
-.form {
+.contact-form {
     border-radius: 25px;
     min-width: 200px;
+    max-width: fit-content;
+    min-width: 45%;
+    min-height: fit-content;
     background:linear-gradient(271deg,rgba(236, 114, 20, 0.766),rgba(207, 146, 2, 0.94) 70.71%);
     color:white;
     padding: 15px;
+    position: relative;
 }
 
-.form label {
-    display: block;
+.contact-form label {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    text-align: left;
 }
 
-.fullName {
-    display:inline-block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: left;
-}
-.emailAdd {
-    display:inline-block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: left;
-}
-.yourMsg {
-    display:inline-block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: left;
-}
-.msg {
-    min-width: 300px;
-    min-height: 100px;
+.contact-form input {
+    min-width:50%;
+    max-width:100%;
 }
 
+.contact-form textarea {
+    min-width: 80%;
+    min-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.submit {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: whitesmoke;
+    border-color: silver;
+    color: goldenrod;
+}
+
+.request-box {
+    border-radius: 25px;
+    max-height: fit-content;
+    min-width: 50%;
+    max-width: fit-content;
+    background:linear-gradient(180deg,rgba(236, 114, 20, 0.766),rgba(207, 146, 2, 0.94) 70.71%);
+    color:white;
+    padding: 15px;
+    margin: 5px;
+    position: relative;
+    top:110%;
+    left: -75%;
+}
+
+.request-text {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.request-form {
+    margin: 20px;
+}
+
+.acct-email {
+    display:block
+}
+
+.request-bttn {
+    place-self: center;
+}
+
+.request-list {
+    display:block;
+    color:white;
+    border-color: white;
+    text-transform: capitalize;
+    text-align: left;  
+    list-style-type: decimal;
+}
+
+.undo-bttn {
+    margin-left: 5px;
+}

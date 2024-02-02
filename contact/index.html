@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="/grid.css">
     <link rel="stylesheet" href="./contact-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
-    <title>Create Account Music App </title>
+    <title>Contact </title>
 </head>
-<body>
+<div>
     <div class="page-wrapper">
             <header></header>
             <main class="container">
                 <div class="row">
                     <div class="column d-flex justify-content-center and align-items-center">
-                                <div class="contact-box d-flex"> 
+                                <section class="contact-box d-flex"> 
                                     <div class ="text">
                                         <style>img {width: 100px;height:auto;}</style>
                                         <a href="/music-app.html"><img src="/images/sound-logo.png"></a>
@@ -22,75 +22,50 @@
                                         <p>We'd love to hear from you!</p>
                                         <p>Your feedback will be considered for updates. Any questions will be answered as soon as possible</p>
                                     </div>
-                                    
-                                    <div class="form">
-                                        <form id ="fullName">Name:
-                                        <label>
-                                                <input type="text" placeholder="First & Last">
-                                        </label>
+                                    <div class="contact-form">
+                                        <form id="contactForm">
+                                            <label for="fullName">Name:</label>
+                                            <input type="text" id="fullName" class="fullName" placeholder="First & Last" required>
+            
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" class="emailAdd" placeholder="example@gmail.com" required>
+            
+                                            <label for="message">Your Message:</label>
+                                            <textarea id="message" class="msg" placeholder="Your message" required></textarea>
+            
+                                            <button type="submit" class ='submit'>SUBMIT</button>
                                         </form>
-                                        <p id ="nameResponse"></p> <!-- show input response-->
-                                                <script> 
-                                                    console.log('Page Loaded');
-                                                    const fullNameForm = document.querySelector('#fullName');
-                                                    const nResponseParagraph = document.querySelector('#nameResponse');
-                                                    fullNameForm.addEventListener('submit',function(event){
-                                                    event.preventDefault();
-                                                    const theForm =event.target;
-                                                    console.log(theForm)
-                                                    const myInput = theForm.querySelector('input');
-                                                    console.log(myInput.value)
-                                                    nResponseParagraph.innerHTML = myInput.value
-                                                    })
-                                                </script>
-
-                                        <form id ="emailAdd">Email:
-                                        <label>
-                                                <input type="text" placeholder="example.a@gmail.com">
-                                        </label>
-                                        </form> 
-                                        <p id ="emailResponse"></p> <!-- show input response-->
-                                                <script> 
-                                                    console.log('Page Loaded');
-                                                    const emailAddForm = document.querySelector('#emailAdd');
-                                                    const eResponseParagraph = document.querySelector('#emailResponse');
-                                                    emailAddForm.addEventListener('submit',function(event){
-                                                    event.preventDefault();
-                                                    const theForm =event.target;
-                                                    console.log(theForm)
-                                                    const myInput = theForm.querySelector('input');
-                                                    console.log(myInput.value)
-                                                    eResponseParagraph.innerHTML = myInput.value
-                                                    })
-                                                </script>
-
-                                        <form id ="yourMsg">Your Message:
-                                        <label>
-                                                <input type="text" class="msg" placeholder="Your message">
-                                        </label>
-                                        </form>
-                                        <p id ="yourMsgResponse"></p> <!-- show input response-->
-                                            <script> 
-                                                console.log('Page Loaded');
-                                                const yourMsgForm = document.querySelector('#yourMsg');
-                                                const yResponseParagraph = document.querySelector('#yourMsgResponse');
-                                                yourMsgForm.addEventListener('submit',function(event){
-                                                event.preventDefault();
-                                                const theForm =event.target;
-                                                console.log(theForm)
-                                                const myInput = theForm.querySelector('input');
-                                                console.log(myInput.value)
-                                                yResponseParagraph.innerHTML = myInput.value
-                                                })
-                                            </script>
-                                                <button type="submit">Submit</button>
                                     </div>
+
+                                    <section class="request-box">
+                                        <div class ="request-text">
+                                            <h3>Is a song you want not available? :(</h3>
+                                            <p>Please fill out this form to send us a request. 
+                                            Be sure to use the <span>email associated with your account!</span></p>
+                                        </div>
+                                            <form id="songRequest" class="request-form">
+                                                <label>Email:</label>
+                                                <input type="email" id="acctEmail" class="acct-email" placeholder="example@gmail.com" required>
+
+                                                <label>Song:</label>
+                                                    <input type="text" class="input" id="inputS" placeholder="type song name" value=""/>
                                                 
-                                </div>
+                                                <label>Artist:</label>
+                                                <input type="text" class="input" id="inputA" placeholder="type artist name" value=""/>
+                                                
+                                                <button type="button" id="generateList">ADD</button>
+                                                <!-- <p class ="request-text"> If you added all the songs you want click [SEND REQUEST].
+                                                If not, please continue to add more until you are ready.</p>
+                                                <button type="button" id="sendRequest" class="request-bttn">SEND REQUEST</button> -->
+                                            </form>
+                                    </section>
+                                </section>
                     </div>
-                </div>                 
+                </div>
             </main>
+
     </div>
+<script src='./contact.js'></script>
 </body>
 <footer></footer>
-</html>
+</html>                                  
