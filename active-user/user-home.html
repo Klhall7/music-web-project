@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./user-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+    <title>Active User</title>
+</head>
+<body>
+    <header></header>
+    <div class="wrapper">
+        <div class="grid-container d-flex">
+            <aside class="sidebar d-flex" id="sidebar">
+                <img src="/images/sound-logo.png">
+                <a href="">My Home</a>
+                <a href="">My Playlists</a>
+                <a href="">My Library</a>
+                <a href="">My Creations</a>
+
+                <a class="help" href="">Get Help</a>
+                
+            </aside>
+
+                <div class="column">
+
+                            <nav class="navbar">
+                                <form class="search-form" id="searchForm"><label>
+                                    <input id=trackInput type="text" placeholder="Enter a song title">
+                                    <button type="submit" id="startSearch">Search</button>
+                                </label></form>
+                                <a href="" class="profile"><img src="./user-images/image placeholder.jpeg"></a>
+                            </nav>
+
+                    <section class="main-content d-flex">
+                        <div class="collection" id="collection">
+                            <h3>Inspirations Library</h3>
+                            <div class="album-grid" id="albumGrid">
+                                <div class="sample" id="sample">
+                                    <img src="./user-images/cat-cover.jpg">
+                                    <p>Naptime</p>
+                                    <p>-</p>
+                                    <p>3AM Zoomies</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="creations" id="creations">
+                            <h3>My Creations</h3>
+                        </div>
+                    </section>
+                    <footer></footer>
+                </div>
+        </div>
+    </div>
+<script src= "./user.js"></script>
+</body>
+
+</html>

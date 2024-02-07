@@ -1,0 +1,206 @@
+html {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: normal;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: inherit;
+    background:linear-gradient(271deg,rgba(248, 185, 66, 0.766),rgba(0, 0, 0, 0.94) 70.71%);
+}
+
+.wrapper {
+    min-width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.grid-container {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh; 
+    width: 100vw;
+}
+
+.navbar {
+    /* background: rgba(216, 178, 9, 0.496); */
+    border-color: goldenrod;
+    border-style: ridge;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    width: 85vw; 
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.navbar img {
+    height: 35px;
+    border-radius: 50px;
+    border-color: goldenrod;
+    border-style: outset;
+    margin: 5%;
+    padding: 1px;
+}
+.navbar input {
+    min-width: 200px;
+    max-width:fit-content;
+}
+
+.search-form {
+    margin-left: 5px;
+}
+.search-form button {
+    border-style: outset;
+    border-color: rgba(173, 50, 5, 0.886);
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.sidebar {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    overflow: hidden;
+    border-color: goldenrod;
+    border-style: ridge;
+    margin: 10px;
+    min-height: max-content;
+    min-width: fit-content;
+    border-radius: 10px;
+    
+}
+.sidebar a {
+    text-decoration: none;
+    color: goldenrod;
+    margin:20px;
+    padding:20px;
+    font-size: small;
+    overflow:hidden;
+}
+.help {
+    align-self: center;   
+}
+
+.sidebar img {
+    max-width: 50px;
+    margin: 5px;
+    padding-top: 10px;
+    align-self: center;
+}
+
+.main-content {
+    flex-direction: column;
+    justify-items: flex-start;
+}
+.collection {
+    display: flex; 
+    flex-flow: row wrap;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: rgba(173, 50, 5, 0.886);
+    border-width: 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: whitesmoke;
+    min-height: max-content;
+    width: 85vw;
+    padding:5px;
+}
+
+.collection h3 {
+    width: 100vw;
+    height:min-content;
+    margin: 2px;
+    padding: 2px 2px 2px 20px;
+    color:goldenrod;
+    font-size: medium;
+    background: linear-gradient(to right, #eb030356, rgba(248, 184, 66, 0.118));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.creations {
+    display: flex; 
+    flex-flow: row wrap;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: rgba(215, 81, 13, 0.886);
+    border-width: 2px;
+    margin-top: 10px;
+    color: whitesmoke;
+    margin-right: 10px;
+    min-height: max-content;
+    width: 85vw;
+    padding:5px;
+}
+
+.creations h3 {
+    width: 100vw;
+    height:min-content;
+    width: 80vw;
+    margin: 2px;
+    padding: 2px 2px 2px 20px;
+    color:goldenrod;
+    font-size: medium;
+    background: linear-gradient(to right, #faa70e56, rgba(248, 184, 66, 0.118));
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.album-grid {
+    display:flex;
+    margin:10px;
+}
+
+.sample {
+    border-color: rgba(173, 50, 5, 0.886);
+    border-style: inset;
+    max-width: min-content;
+    color: whitesmoke;
+    text-align: center;
+    font-size: small;
+}
+.sample img {
+    max-height: 100px;
+    margin: 5px;
+}
+.sample p {
+    margin:0px 0px 2px 0px;
+}
+
+.new-inspo-div {
+    border-color: rgba(173, 50, 5, 0.886);
+    border-style: inset;
+    max-width: fit-content;
+    color: whitesmoke;
+    text-align: center;
+    font-size: small;
+    margin-left: 20px;
+}
+
+
+
+/* .column {
+    min-height: 100px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+.row {
+    display: flex;
+    max-width: none;
+    width: 100%; 
+    padding: 0; 
+} */
+.d-flex {
+    display: flex;
+}
