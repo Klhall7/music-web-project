@@ -36,7 +36,7 @@ body {
     padding: 5px;
     border-radius: 10px;
     align-items: center;
-    width: 85vw; 
+    width: inherit; 
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -64,38 +64,68 @@ body {
     border-width: 3px;
 }
 
+.sidebar-container {
+    max-width: 16vw;
+    margin: none;
+}
 .sidebar {
-    display: flex; 
     flex-direction: column; 
     align-items: flex-end; 
     overflow: hidden;
     border-color: goldenrod;
     border-style: ridge;
-    margin: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     min-height: max-content;
-    min-width: fit-content;
-    border-radius: 10px;
-    
+    min-width: min-content;
+    border-radius: 10px; 
+    padding: 15px; 
+    overflow:auto;
 }
 .sidebar a {
+    background:linear-gradient(to right, #faa70e56, rgba(248, 184, 66, 0.118));
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     text-decoration: none;
     color: goldenrod;
-    margin:20px;
-    padding:20px;
-    font-size: small;
-    overflow:hidden;
-}
-.help {
-    align-self: center;   
+    padding:5px 10px 5px 5px;
+    margin-right: 5px;
+    font-size: medium;
 }
 
 .sidebar img {
     max-width: 50px;
-    margin: 5px;
-    padding-top: 10px;
+    margin: 5px 0px 10px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     align-self: center;
 }
 
+.sidebar-2 {
+    flex-direction: column; 
+    align-items: center; 
+    overflow: hidden;
+    border-color: goldenrod;
+    border-style: ridge;
+    margin-top: 10px;
+    margin-right: 10px;
+    min-height: fit-content;
+    min-width: min-content;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.sidebar-2  a {
+    text-decoration: none;
+    color: goldenrod;
+    margin: 10px;
+    padding:10px;
+    font-size: small;
+}
+
+.right-content {
+    width:85vw;
+}
 .main-content {
     flex-direction: column;
     justify-items: flex-start;
@@ -110,7 +140,7 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     color: whitesmoke;
-    min-height: max-content;
+    min-height: fit-content;
     width: 85vw;
     padding:5px;
 }
@@ -137,7 +167,7 @@ body {
     margin-top: 10px;
     color: whitesmoke;
     margin-right: 10px;
-    min-height: max-content;
+    min-height: fit-content;
     width: 85vw;
     padding:5px;
 }
@@ -163,44 +193,40 @@ body {
 .sample {
     border-color: rgba(173, 50, 5, 0.886);
     border-style: inset;
-    max-width: min-content;
+    max-width: 12vw;
     color: whitesmoke;
     text-align: center;
     font-size: small;
 }
 .sample img {
-    max-height: 100px;
+    max-height: 12vh;
     margin: 5px;
+    max-width: 12vh;
 }
 .sample p {
     margin:0px 0px 2px 0px;
 }
 
 .new-inspo-div {
-    border-color: rgba(173, 50, 5, 0.886);
+    border-color: rgba(213, 68, 16, 0.886);
     border-style: inset;
-    max-width: fit-content;
+    max-width: 12vw;
     color: whitesmoke;
     text-align: center;
     font-size: small;
     margin-left: 20px;
 }
 
-
-
-/* .column {
-    min-height: 100px;
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 0;
+.new-img {
+    max-height: 12vh;
+    max-width: 12vh;
+    margin: 5px;
 }
-.row {
-    display: flex;
-    max-width: none;
-    width: 100%; 
-    padding: 0; 
-} */
+
+.new-pgh {
+    margin: 5px;
+}
+
 .d-flex {
     display: flex;
 }

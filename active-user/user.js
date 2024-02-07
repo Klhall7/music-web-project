@@ -40,7 +40,7 @@ searchForm.addEventListener ('submit', async function (event) {
             if (filteredData.results && filteredData.results.length > 0) {
                 const firstResult = filteredData.results[0];
                 const mappedResult = {
-                    // cover: firstResult.cover_image ? firstResult.cover_image: '', ${mappedResult.cover_image},
+                    cover_image: firstResult.cover_image ? firstResult.cover_image: '', 
                     title: firstResult.title ? firstResult.title: '',
                     genre: firstResult.genre ? firstResult.genre.join(', ') : '',
                     style: firstResult.style ? firstResult.style.join(' / ') : '',
@@ -52,8 +52,15 @@ searchForm.addEventListener ('submit', async function (event) {
                     const resultParagraph = document.createElement('p'); //paragraph element for mapped result
                     const resultText = `${mappedResult.title}, Genre: ${mappedResult.genre}, Style: ${mappedResult.style}, Release Year: ${mappedResult.year}`;
                     resultParagraph.innerHTML = resultText.replace(/,/g, '<br>'); // Replace commas with line breaks
+                    resultParagraph.classList.add('new-pgh');
+
                     newInspo.appendChild(resultParagraph); // append to new div
                     document.getElementById('albumGrid').appendChild(newInspo);
+
+                    const resultImg = document.createElement('img'); // take cover image link and create img. append to div
+                    resultImg.src = mappedResult.cover_image;
+                    resultImg.classList.add('new-img');
+                    resultParagraph.insertAdjacentElement("beforebegin", resultImg);
 
         
             } else { //if no result found
