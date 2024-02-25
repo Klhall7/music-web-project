@@ -39,7 +39,7 @@ searchForm.addEventListener ('submit', async function (event) {
 
             if (filteredData.results && filteredData.results.length > 0) {
                 const firstResult = filteredData.results[0];
-                const mappedResult = {
+                const mappedResult = { //conditional expressions 
                     cover_image: firstResult.cover_image ? firstResult.cover_image: '', 
                     title: firstResult.title ? firstResult.title: '',
                     genre: firstResult.genre ? firstResult.genre.join(', ') : '',

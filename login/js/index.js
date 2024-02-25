@@ -3,38 +3,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Login Page Ready');
 
-    const userList= document.querySelector('#userList');
-    const generateList = document.querySelector('#generateList')
-    
-    generateList.addEventListener('click', function () {
-        const inputS = document.querySelector('#inputS'); // Select input with id 'inputS'
-        const inputA = document.querySelector('#inputA');
-
-        const listElement = document.createElement('ol'); //create ol items from input
-
-        const listItem = document.createElement('li'); //create single list item from both inputs as a string
-        listItem.innerText = `${inputS.value} - ${inputA.value}`;
-
-        // Check if the list item is not empty before appending
-        if (listItem.innerText.trim() !== '') {
-            listElement.appendChild(listItem); // add li to ol
-            userList.appendChild(listElement); // Append the generated list to the container
-            userList.classList.add('new-list'); //add class to userList -does not affect any existing class
-        }     
-        // Clear the value of the input fields
-        inputS.value = "";
-        inputA.value = "";
-    });
 });
 
 function get(url) {
-    console.log('Functions Defined')
-    return fetch(url, {             //fetch requests data from the API server (JSON)
+    console.log('get function defined');
+    return fetch(url, {     
+    mode: 'cors',       //fetch requests data from the API server (JSON)
     method: 'GET',                  // want to tell server we want to receive data (fetch can give and receive)
     headers: {
-        'User-Agent': 'KyraHaIsHere/3.0', //This server wants a user agent, so we have to explicitly pass one
+        'User-Agent': 'KyraXIsHere/3.0',  //This server wants a user agent, so we have to explicitly pass one
     },
-})                                  // can use a local JSON file instead of a server as a workaround for fetch api Errors
+})                                 // can use a local JSON file instead of a server as a workaround for fetch api Errors
     .then(function (response) { // parameter can have any name, it will still be a response
         console.log(response);
         return response.json();
@@ -47,6 +26,7 @@ function get(url) {
 };
 
     function getReleases(url) {
+        console.log('get releases defined');
         get(url).then(function (data) {
             const {releases} = data;
             console.log(releases);
@@ -54,21 +34,16 @@ function get(url) {
                 const { title } = release;
                 const paragraph =document.createElement('p');
                 paragraph.textContent = title;
-                // printLib.appendChild(paragraph);
                 releasesContainer.appendChild(paragraph);
             })
         })
     };
-    
-
-    document.addEventListener('DOMContentLoaded', function () { // DOM event setup
-    console.log('Library Loaded');
 
     const printLib = document.querySelector('#printLib');
     const releasesContainer = document.querySelector('#releasesContainer');
 
     printLib.addEventListener('click',(function() {
-        console.log("IIFE")
+        console.log("show active lib clicked")
         get("https://api.discogs.com/artists/277594").then (function(data) {
             const { releases_url } = data;
             getReleases(releases_url);
@@ -77,25 +52,22 @@ function get(url) {
 
     }) );
 
-    });
 
     function showArtist(artistName) {
+        console.log('show artist func defined');
         const paragraph = document.createElement('p');
         paragraph.textContent = artistName; // pulling data by key name for p element
         artistsContainer.appendChild(paragraph);
                         
     };
 
-    document.addEventListener('DOMContentLoaded', function () { 
-        console.log('XRay Loaded');
-    
         const artistsData = document.querySelector('#artistsData');
         const artistsContainer = document.querySelector('#artistsContainer');
 
     
         artistsData.addEventListener('click',(function() {
-            console.log("artists IIFE");
-            get("https://api.discogs.com/artists/277594").then (function(data) {
+            console.log("show available clicked xray");
+            get("ttps://api.discogs.com/artists/277594").then (function(data) {
                 const {name} = data;
                 showArtist(name);
 
@@ -104,6 +76,7 @@ function get(url) {
 
         // startSearch.addEventListener("click", function() {
         document.getElementById("startSearch").addEventListener("click", function() {
+            console.log('input fill and search xray');
             let searchKey = document.getElementById("searchInput").value.toLowerCase(); //input control
             const searchResultElement = document.getElementById("searchResult");
             searchKey = searchKey.replace(/\s+/g, ''); // remove spaces from input
@@ -125,17 +98,5 @@ function get(url) {
                 searchResultElement.innerText = "No matching result found.";
             });
         });
-
-        // document.getElementById("showKeys").addEventListener("click", function() {
-        //     const keysContainer = document.getElementById("#keysContainer");
-        //     get("https://api.discogs.com/artists/277594").then(function(data) {
-        //         const keys = Object.keys(data); 
-        //         keys.forEach(function(key) { 
-        //             const paragraph = document.createElement("p");
-        //             paragraph.textContent = key;
-        //             keysContainer.appendChild(paragraph);
-        //         });
-        //     });
-        // });
     
-});
+
